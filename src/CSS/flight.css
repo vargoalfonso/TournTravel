@@ -1,0 +1,144 @@
+.flight-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.flight-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.flight-nav a {
+  margin: 0 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color: #007bff;
+  color: black;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.flight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 24px;
+}
+
+@media (min-width: 700px) {
+  .flight-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+.modal-content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
+  border-radius: 16px;
+  padding: 32px 24px 24px 24px;
+  max-width: 600px;
+  width: 95vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 20px 8px 16px 8px;
+  }
+}
+
+.flight-input,
+.flight-date {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: black;
+}
+
+.flight-input label,
+.flight-date label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.flight-input input,
+.flight-input select,
+.flight-date input,
+.flight-date select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: black;
+}
+
+.flight-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.flight-search-btn {
+  margin-top: 32px;
+  width: 100%;
+  padding: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.flight-search-btn:hover {
+  background-color: #0056b3;
+}

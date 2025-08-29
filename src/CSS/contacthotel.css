@@ -1,0 +1,179 @@
+.contacthotel-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* Left column */
+.hotel-summary {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+}
+.hotel-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.hotel-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.hotel-rating {
+  font-size: 14px;
+}
+.hotel-image {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+.icon-box {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.check-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+.check-section .label {
+  font-size: 12px;
+  color: #666;
+}
+.check-section .value {
+  margin-top: 4px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.arrow {
+  margin: 0 10px;
+  color: #888;
+}
+.hotel-info {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  font-size: 14px;
+}
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+.total-price .label {
+  font-size: 13px;
+  color: #666;
+}
+.total-price .small {
+  font-size: 11px;
+  color: #999;
+}
+.total-price .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Right column */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f8f8f8;
+  font-size: 13px;
+  color: #555;
+}
+.contact-box, .price-box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+}
+.contact-box h4, .price-box h4 {
+  margin-bottom: 10px;
+}
+.contact-box p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 12px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+.form-grid label span {
+  margin-bottom: 4px;
+  font-size: 13px;
+  color: #333;
+}
+.form-grid input {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 13px;
+}
+.form-grid .wide {
+  grid-column: span 2;
+}
+.radio-group {
+  grid-column: span 2;
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.price-box .highlight {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  margin: 10px 0;
+}
+.price-box .details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+.price-box .details div {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.continue-btn {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+}

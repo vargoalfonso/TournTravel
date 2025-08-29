@@ -1,0 +1,207 @@
+.flightbooking-container {
+  display: flex;
+  gap: 24px;
+  font-family: 'Inter', sans-serif;
+  padding: 24px;
+}
+
+.flightbooking-sidebar {
+  width: 260px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fafbfc;
+}
+
+.sidebar-title {
+  font-weight: 600;
+
+}
+
+.sidebar-flightlist {
+  margin-top: 8px;
+}
+
+.sidebar-flight {
+  border: 1px solid #b3d8fd;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #e6f0fa;
+  color: #222;
+}
+
+.sidebar-flight.inactive {
+  background: #f3f3f3;
+  color: #aaa;
+  border: 1px solid #eee;
+}
+
+.sidebar-filter {
+  margin-top: 18px;
+  color: black;
+}
+
+
+.filter-label {
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  ;
+}
+
+.filter-timerange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.timerange-box {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 4px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  background: #f8f8f8;
+}
+
+.timerange-time {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.filter-range {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.filter-range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+.flightbooking-list {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.flightbooking-summary {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  background: #f9f9f9;
+}
+
+.flightbooking-flights {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: black;
+}
+
+.flightbooking-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fcfcfc;
+}
+
+.flightbooking-item-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.flightbooking-item-icon {
+  width: 48px;
+  height: 48px;
+  background: #e3e3e3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.flightbooking-item-name {
+  font-weight: 600;
+}
+
+.flightbooking-item-time,
+.flightbooking-item-route {
+  font-size: 0.98rem;
+}
+
+.flightbooking-item-detail {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 2px;
+}
+.timerange-box {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  color: black;
+  text-align: center;
+  margin-bottom: 6px;
+  transition: all 0.3s;
+}
+
+.timerange-box.active {
+  background: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.flightbooking-item-action {
+  text-align: right;
+}
+
+.flightbooking-item-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.flightbooking-item-btn {
+  margin-top: 8px;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.flightbooking-item-btn:hover {
+  background: #1769aa;
+}
+
+.flightbooking-noflight {
+  text-align: center;
+  color: #888;
+  margin-top: 24px;
+}
