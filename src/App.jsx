@@ -1,7 +1,7 @@
 // App.jsx
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Login from "./login";
-import Home from "./home";
+import Home from "./Home";
 import Register from "./register";
 import Flight from "./flight";
 import Hotel from "./hotel";
