@@ -1,0 +1,85 @@
+.contactdetail-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT SIDEBAR */
+.payment-left {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  color: black;
+  width: 280px;       /* lebar fixed */
+  height: auto;       /* tinggi otomatis */
+  flex-shrink: 0;     /* biar tidak mengecil */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.hotel-info h3 {
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+/* CHECK-IN CHECK-OUT BOX */
+.date-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 15px 0;
+}
+
+.date-box .checkin,
+.date-box .checkout {
+  text-align: center;
+  flex: 1;
+}
+
+.date-box p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.date-box strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+
+.arrow {
+  margin: 0 12px;
+  font-size: 16px;
+  color: #777;
+}
+
+/* TEXT STYLE */
+.hotel-info p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.hotel-info h4 {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+}

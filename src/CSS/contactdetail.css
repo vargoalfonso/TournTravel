@@ -1,0 +1,114 @@
+.contactdetail-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contactdetail-left {
+
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  color: black;
+  height: 300px; 
+  width: 200px;
+ 
+}
+
+.detailright{
+   
+    width: 800px;
+    padding-left: 50px;
+}
+.gap{
+    padding: 20px;
+}
+.contactdetail-right {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  color: black;
+  text-align: left;
+}
+.contactdetail-right1 {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  color: black;
+text-align: left;
+
+}
+
+
+.sidebar-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar-flightlist p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.right ,
+.right1 {
+  text-align: left;        
+  margin-top: 0;
+  margin-bottom: 10px;   
+  font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+
+}
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top:10px ;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  color: black;
+  background-color: white;
+}
+
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end; /* dorong ke kanan */
+  margin-top: 20px;
+}
+
+
+.submit-btn:hover {
+  background: #005fcc;
+}
