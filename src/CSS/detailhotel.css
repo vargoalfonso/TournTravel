@@ -3,6 +3,7 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   color: #222;
+  background-color: whitesmoke;
 }
 
 /* Summary */
@@ -25,6 +26,9 @@
   padding: 12px;
   background: #fff;
   margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .gallery-main {
@@ -33,8 +37,8 @@
 }
 
 .gallery-main img {
-  width: 200px;
-  height: 150px;
+  width: 500px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid #ddd;
@@ -51,6 +55,8 @@
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid #ddd;
+  width: 200px;
+  height: 150px;
 }
 
 /* Hotel Info */

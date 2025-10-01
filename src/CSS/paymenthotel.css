@@ -4,10 +4,12 @@
   padding: 20px;
   background: #f9f9f9;
   font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  min-height: 100vh;
 }
 
 .payment-left {
-  width: 30%;
+  height: fit-content;
   background: #fff;
   border-radius: 12px;
   padding: 20px;
@@ -117,7 +119,6 @@
 }
 
 .price-box {
-  background: #f9f9f9;
   padding: 15px;
   border-radius: 10px;
   margin-top: 20px;

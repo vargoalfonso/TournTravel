@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CSS/hotellistingpage.css";
+import headlogo from './assets/visionandtour.png';
 
 const hotelsList = [
   {
@@ -34,6 +35,10 @@ function HotelBooking() {
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [priceLimit, setPriceLimit] = useState(1000000);
   const navigate = useNavigate();
+  const PesananClick = () => navigate('/PesananSaya');
+  const BantuanClick = () => navigate('/HelpSupportPage');
+  const handleLoginClick = () => navigate('/login');
+  const handleRegisterClick = () => navigate('/Register');
 
   // toggle rating
   const toggleRating = (rating) => {
@@ -65,6 +70,20 @@ function HotelBooking() {
   };
 
   return (
+    <>
+          <div className='list-navbar'>
+            <div className='Head-logo'>
+              <a href='/' onClick={e => {e.preventDefault(); navigate('/')}}>
+                <img src={headlogo} className="logo" alt='headlogo'/>
+              </a>
+            </div>
+            <ul>
+              <li onClick={PesananClick}><a href=""> Pesanan</a></li>
+              <li onClick={BantuanClick}><a href=""> Bantuan</a></li>
+              <li><button onClick={handleLoginClick}>Login</button></li>
+              <li><button onClick={handleRegisterClick}>Register</button></li>
+            </ul>
+          </div>
     <div className="hotelbooking-container">
       {/* Sidebar Filter */}
       <div className="hotelbooking-sidebar">
@@ -162,6 +181,7 @@ function HotelBooking() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

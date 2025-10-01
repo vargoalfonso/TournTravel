@@ -2,20 +2,17 @@
   display: flex;
   gap: 20px;
   padding: 20px;
+  background-color: whitesmoke;
 }
-
-.contactdetail-left {
-
-  border: 1px solid #ccc;
+.contactdetailleft{
+  border: none;
+  background: white;
   padding: 20px;
   border-radius: 10px;
-  background: #f9f9f9;
-  color: black;
-  height: 300px; 
-  width: 200px;
- 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  
 }
-
 .detailright{
    
     width: 800px;
@@ -24,28 +21,61 @@
 .gap{
     padding: 20px;
 }
-.contactdetail-right {
-  border: 1px solid #ddd;
+.contactdetailright {
+  border: none;
   padding: 15px;
   border-radius: 10px;
   background: #fff;
   color: black;
   text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-.contactdetail-right1 {
-  border: 1px solid #ddd;
+.contactdetailright1 {
+  border: none;
   padding: 15px;
   border-radius: 10px;
   background: #fff;
   color: black;
-text-align: left;
-
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 
 
 .sidebar-title {
   font-size: 18px;
   margin-bottom: 10px;
+}
+.sidebar-flightlist1{
+  padding: 20px;
+  border: none;
+  background-color: #d9ecff;
+  border-radius: 8px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sidebar-flightlist2{
+  padding: 20px;
+  border: none;
+  background-color: #d9ecff;
+  border-radius: 8px;
+  color: #007bff;
+  font-weight: bold;
+}
+.divider {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 10px 0 15px 0;      
+}
+.TotalHarga{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.TotalHarga h4{
+  color: #007bff;
+  padding-top: 1px;
 }
 
 .sidebar-flightlist p {
@@ -111,4 +141,28 @@ text-align: left;
 
 .submit-btn:hover {
   background: #005fcc;
+}
+
+.list-navbar {
+  width: 100%;
+  background-color: white; 
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-navbar ul {
+  display: flex;
+
+  list-style: none;
+margin-bottom: 50px;
+}
+.list-navbar ul li {
+  margin-left: 30px;
+}
+.list-navbar button {
+  margin-left: 0px;
+  background-color: #2196f3;
+  color: white;
 }

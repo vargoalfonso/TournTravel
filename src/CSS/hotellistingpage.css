@@ -4,15 +4,19 @@
   gap: 20px;
   padding: 20px;
   font-family: Arial, sans-serif;
+  background: whitesmoke;
+  height: 100vh;
 }
 
 /* Sidebar */
 .hotelbooking-sidebar {
+  height: 600px;
   width: 250px;
-  border: 1px solid #ccc;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 15px;
-  background: #f9f9f9;
+  background: white;
 }
 
 .sidebar-title {
@@ -61,12 +65,13 @@
 }
 
 .hotelbooking-summary {
-  border: 1px solid #ccc;
+  border: 1px solid #bcdaf9;
+  background: #d9ecff;
   padding: 12px;
   border-radius: 8px;
   margin-bottom: 20px;
-  font-size: 14px;
-  background: #fff;
+  font-size: 16px;
+
 }
 
 .hotelbooking-hotels {
@@ -79,7 +84,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ddd;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   border-radius: 10px;
   padding: 15px;
   background: #fff;

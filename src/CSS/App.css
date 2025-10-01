@@ -1,6 +1,7 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   text-align: center;
+  
 }
 .searchbar {
   padding-bottom: 20px;
@@ -67,7 +68,7 @@
 }
 
 
-.list-navbar {
+.listnavbar {
   width: 100%;
   background-color: white; 
   display: flex;
@@ -76,33 +77,44 @@
   align-items: center;
 }
 
-.list-navbar ul {
+.listnavbar ul {
   display: flex;
   align-items: center;
   list-style: none;
 margin-bottom: 50px;
+color: black;
+
 }
-.list-navbar ul li {
+.listnavbar ul li a {
   margin-left: 30px;
+  color: black;
 }
-.list-navbar button {
+.listnavbar button {
   margin-left: 30px;
+  background-color: #007bff;
+  color: white;
 }
 .List{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px; 
+  padding-top: 20px;
 
+}
+.section-header{
+  background-color: rgb(250, 249, 249);
+  height: 90vw;
+  width: 100vw;
 }
 
 .list-navbar a {
-  color: black;
+  color: black !important;
   text-decoration: none;
 }
 .list-navbar a:hover {
   text-decoration: underline;
-  color: #333; 
+  color: #333 !important;
 }
 
 .List a {
@@ -169,4 +181,154 @@ padding-bottom: 40px;
   font-size: 13px;
   text-align: center;
   color: #777;
+}
+
+/* Hero Section */
+.hero-section {
+ width: 100vw;      
+ height: 20vw;      
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ background: linear-gradient(135deg, #dbeafe, #bae6fd, #ccfbf1);
+  margin: 0;                  /* hilangkan margin default */
+  padding: 40px 20px;
+}
+
+.hero-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hero-section .highlight {
+  color: #007bff; /* biru Vision Tour */
+}
+
+.hero-section p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Search Wrapper */
+.search-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.search-wrapper input {
+  border: none;
+  padding: 20px 100px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.search-wrapper .search-btn {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.search-wrapper .search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Popular Destinations */
+.popular-destinations {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.popular-destinations span {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.popular-destinations span:hover {
+  background: #007bff;
+  color: white;
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 20px;
+  border-top: 1px solid #e0e0e0;
+  font-family: sans-serif;
+  width: 100vw;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #007bff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  color: white;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+  color: white;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+.social-icons a {
+  margin-right: 12px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #666;
 }

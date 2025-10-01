@@ -4,18 +4,36 @@
   padding: 20px;
 }
 
-.contactdetail-left {
+.contactdetailleft {
 
-  border: 1px solid #ccc;
+  border: none;
   padding: 20px;
   border-radius: 10px;
   background: #f9f9f9;
   color: black;
-  height: 300px; 
+  height: auto; 
   width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
  
 }
-
+.sidebarflightlist{
+  padding: 20px;
+  border: none;
+  background-color: #d9ecff;
+  border-radius: 8px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sidebarflightlist1{
+  padding: 20px;
+  border: none;
+  background-color: #d9ecff;
+  border-radius: 8px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .detailright{
    
     width: 800px;
@@ -25,33 +43,37 @@
     padding: 20px;
 }
 .contactdetail-right {
-  border: 1px solid #ddd;
+  border: none;
   padding: 15px;
   border-radius: 10px;
   background: #fff;
   color: black;
   text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .contactdetail-right1 {
-  border: 1px solid #ddd;
+  border: none;
   padding: 15px;
   border-radius: 10px;
   background: #fff;
   color: black;
 text-align: left;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
 }
 .contactdetail-right2 {
-  border: 1px solid #ddd;
+  border: none;
   padding: 15px;
   border-radius: 10px;
   background: #fff;
   color: black;
 text-align: left;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
 }
 .labelleft{
     font-weight: bold;
+    color: #007bff;
     
 }
 .divider {
@@ -129,4 +151,14 @@ text-align: left;
 
 .submit-btn:hover {
   background: #005fcc;
+}
+
+.icon-left-svg {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: none;
+  border-radius: 6px;
+  box-shadow: none;
 }

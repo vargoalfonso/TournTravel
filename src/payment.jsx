@@ -37,23 +37,28 @@ function Paymentmethod({ onSubmit }) {
   };
 
   return (
-    <div className="contactdetail-container">
+    <div className="contactdetailcontainer">
       {/* Sidebar kiri */}
-      <div className="contactdetail-left">
+      <div className="contactdetailleft">
         <h2 className="sidebar-title">Flight Summary</h2>
-        <div className="sidebar-flightlist">
+        <div className="sidebarflightlist">
           <p>
             <strong>1.</strong> Jakarta → Bali
             <br />
             Tue, 10 Sep 2024
           </p>
+          </div>
+           <hr className="divider" />
+          <div className="sidebarflightlist1">
           <p>
-            <hr className="divider" />
+            
             <strong>2.</strong> Bali → Jakarta
             <br />
             Wed, 11 Sep 2024
           </p>
+          </div>
           <hr className="divider" />
+          <div className="sidebarflightlist2">
           <p>
             <strong></strong> Passanger(s) Detail
             <br />
@@ -64,7 +69,7 @@ function Paymentmethod({ onSubmit }) {
 
       {/* Form kanan */}
       <div className="detailright">
-        <div className="contactdetail-right">
+        <div className="contactdetailright">
           <h3>
             We’re holding this price for you! Let’s complete your payment in
             00:39:27

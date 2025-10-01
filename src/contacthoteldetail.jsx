@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CSS/contacthotel.css";
 import { useNavigate } from 'react-router-dom';
+import headlogo from './assets/visionandtour.png';
 
 function ContactHotelDetail() {
   const navigate = useNavigate();
@@ -20,8 +21,26 @@ function ContactHotelDetail() {
   const handleContinue = () => {
     navigate('/HotelPaymentmethod');
   };
+  const PesananClick = () => navigate('/PesananSaya');
+  const BantuanClick = () => navigate('/HelpSupportPage');
+  const handleLoginClick = () => navigate('/login');
+  const handleRegisterClick = () => navigate('/Register');
 
   return (
+     <>
+              <div className='list-navbar'>
+                <div className='Head-logo'>
+                  <a href='/' onClick={e => {e.preventDefault(); navigate('/')}}>
+                    <img src={headlogo} className="logo" alt='headlogo'/>
+                  </a>
+                </div>
+                <ul>
+                  <li onClick={PesananClick}><a href=""> Pesanan</a></li>
+                  <li onClick={BantuanClick}><a href=""> Bantuan</a></li>
+                  <li><button onClick={handleLoginClick}>Login</button></li>
+                  <li><button onClick={handleRegisterClick}>Register</button></li>
+                </ul>
+              </div>
     <div className="contacthotel-container">
       {/* Left column: Hotel summary */}
       <aside className="hotel-summary">
@@ -138,7 +157,7 @@ function ContactHotelDetail() {
             <span>Price You Pay</span>
             <strong>Rp. 750.000</strong>
           </div>
-
+ <hr className="divider" />
           <div className="details">
             <div>
               <span>Room Price</span>
@@ -156,6 +175,7 @@ function ContactHotelDetail() {
         </div>
       </main>
     </div>
+    </>
   );
 }
 export default ContactHotelDetail;

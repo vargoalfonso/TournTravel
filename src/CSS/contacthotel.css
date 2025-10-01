@@ -5,11 +5,15 @@
   padding: 20px;
   font-family: sans-serif;
   color: #222;
+  background-color: whitesmoke;
+  min-height: 100vh;
 }
 
 /* Left column */
 .hotel-summary {
-  border: 1px solid #ccc;
+  height: fit-content;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
   padding: 16px;
   background: #fff;
@@ -95,18 +99,19 @@
   gap: 20px;
 }
 .login-box {
-  border: 1px solid #ccc;
+  border: 1px solid #c0e0ff;
   border-radius: 12px;
   padding: 12px;
-  background: #f8f8f8;
+  background: #d9ecff;
   font-size: 13px;
   color: #555;
 }
 .contact-box, .price-box {
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 12px;
   padding: 16px;
   background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .contact-box h4, .price-box h4 {
   margin-bottom: 10px;
@@ -150,16 +155,16 @@
 .price-box .highlight {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 8px 0;
-  margin: 10px 0;
 }
 .price-box .details {
   display: flex;
   flex-direction: column;
   gap: 6px;
   font-size: 13px;
+}
+.details{
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .price-box .details div {
   display: flex;
@@ -176,4 +181,14 @@
   background: #fff;
   cursor: pointer;
   background-color: #007bff;
+  color: white;
+}
+.highlight{
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(203, 233, 252);
+  background-color: rgb(203, 233, 252);
+  color: rgb(0, 98, 255);
+  font-weight: bold;
+  border-radius: 5px;
 }

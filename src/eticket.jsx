@@ -42,14 +42,14 @@ function Eticket({ onSubmit }) {
 
       {/* Form kanan */}
       <div className="detailright">
-        <div className="contactdetail-right">
+        <div className="contactdetailright0">
           <h3>
             We’re holding this price for you! Let’s complete your payment in
             00:17:26
           </h3>
         </div>
         <div className="gap"></div>
-        <div className="contactdetail-right">
+        <div className="contactdetailright">
           <h3>
             Check your email (samuel.wi@gmail.com) for payment instructions.
           </h3>
@@ -60,10 +60,10 @@ function Eticket({ onSubmit }) {
             {/* Travel Detail */}
             <p className="right1">Virtual Account</p>
             <div className="form-group">
-              <p>Account Number : <strong>22222085945840078</strong></p>
-              <p>Account Holder Name : <strong>TVLK 609475840</strong></p>
+              <p className="border2">Account Number : <strong>22222085945840078</strong></p>
+              <p className="border1">Account Holder Name : <strong>TVLK 609475840</strong></p>
               <hr className="divider" />
-              <p>Transfer Amount : <strong>Rp 1.920.000</strong></p>
+              <p className="border">Transfer Amount : <strong>Rp 1.920.000</strong></p>
             </div>
           </form>
         </div>

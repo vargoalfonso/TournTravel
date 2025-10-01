@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CSS/contactdetail.css";
 import { useNavigate } from "react-router-dom";
+import headlogo from './assets/visionandtour.png';
 
 function ContactDetail({ onSubmit }) {
   const navigate = useNavigate();
@@ -29,6 +30,10 @@ function ContactDetail({ onSubmit }) {
    const handleSearch = () => {
   navigate('/ReviewFlightDetail');
 };
+  const PesananClick = () => navigate('/PesananSaya');
+  const BantuanClick = () => navigate('/HelpSupportPage');
+  const handleLoginClick = () => navigate('/login');
+  const handleRegisterClick = () => navigate('/Register');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,20 +41,42 @@ function ContactDetail({ onSubmit }) {
   };
 
   return (
+    <>
+          <div className='list-navbar'>
+            <div className='Head-logo'>
+              <a href='/' onClick={e => {e.preventDefault(); navigate('/')}}>
+                <img src={headlogo} className="logo" alt='headlogo'/>
+              </a>
+            </div>
+            <ul>
+              <li onClick={PesananClick}><a href=""> Pesanan</a></li>
+              <li onClick={BantuanClick}><a href=""> Bantuan</a></li>
+              <li><button onClick={handleLoginClick}>Login</button></li>
+              <li><button onClick={handleRegisterClick}>Register</button></li>
+            </ul>
+          </div>
     <div className="contactdetail-container">
       {/* Sidebar kiri */}
-      <div className="contactdetail-left">
+      <div className="contactdetailleft">
         <h2 className="sidebar-title">Your Flight</h2>
-        <div className="sidebar-flightlist">
+        <div className="sidebar-flightlist1">
           <p>
             <strong>1.</strong> Jakarta → Bali<br />
             Tue, 10 Sep 2024
           </p>
+          </div>
+          <div className="sidebar-flightlist2">
           <p>
             <strong>2.</strong> Bali → Jakarta<br />
             Wed, 11 Sep 2024
           </p>
         </div>
+        <hr className="divider" />
+        <div className="TotalHarga">
+          <h3>Total Price</h3>
+          <h4>IDR 1.500.000</h4>
+        </div>
+        <p>Untuk 1 Penumpang</p>
       </div>
 
          {/* Form kanan */}
@@ -111,7 +138,7 @@ function ContactDetail({ onSubmit }) {
           <div className="gap">
             
           </div>
-           <div className="contactdetail-right1">
+           <div className="contactdetailright1">
          <form onSubmit={handleSubmit} className="contactdetail-form12">
           {/* Travel Detail */}
           <p className="right1">Travel Details</p>
@@ -175,6 +202,7 @@ function ContactDetail({ onSubmit }) {
 
       </div>
     </div>
+    </>
   );
 }
 

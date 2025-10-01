@@ -38,7 +38,7 @@ const cards = [
   },
 ];
 
-function home() {
+function Home() {
   const navigate = useNavigate(); 
 
   const handleLoginClick = () => {
@@ -68,7 +68,7 @@ function home() {
   }
   return (
     <>
-      <div className='list-navbar'>
+      <div className='listnavbar'>
         <div className='Head-logo'>
           <a href=''>
             <img src={headlogo} className="logo" alt='headlogo'/>
@@ -83,25 +83,44 @@ function home() {
         </ul>
       </div>
 
-      <div className='searchbar'>
-        <input
-          type="text"
-          id="header-search"
-          placeholder="Mau ke mana? Coba cari destinasi impianmu..."
-        />
-      </div>
+      <div className="hero-section">
+  <h1>
+    Jelajahi Dunia Bersama <span className="highlight">Vision Tour</span>
+  </h1>
+  <p>
+    Temukan destinasi impian Anda dengan layanan terpercaya dan pengalaman tak terlupakan
+  </p>
+
+  {/* Search Bar */}
+  <div className="search-wrapper">
+    <input
+      type="text"
+      placeholder="Mau ke mana? Coba cari destinasi impianmu..."
+    />
+    <button className="search-btn">Cari</button>
+  </div>
+
+  {/* Popular destinations */}
+  <div className="popular-destinations">
+    <span>Bali</span>
+    <span>Jakarta</span>
+    <span>Yogyakarta</span>
+    <span>Lombok</span>
+    <span>Bandung</span>
+  </div>
+</div>
 
       <div className='List'>
         <a href="#" onClick={e => { e.preventDefault(); handleHotelClick(); }}>
   <img src={hotellogo} className="logohotel" alt="hotel logo" />
   <p>Hotel</p>
-</a>handleHotelClick
+</a>
         <a href="#" onClick={e=>{e.preventDefault(); handleFlightClick();}} target="_blank">
           <img src={planelogo} className="logoflight flight" alt="flight logo" />
           <p>Flight</p>
         </a>
       </div>
-
+<div className='section-header'>
       <h2 className='section-title'>Destinasi Populer</h2>
       <div className="card-container">
         {cards.map((card, index) => (
@@ -115,9 +134,54 @@ function home() {
           </div>
         ))}
       </div>
+      </div>
+
+      <footer className="footer">
+  <div className="footer-container">
+    <div className="footer-section">
+      <h4>Vision Tour</h4>
+      <p>Mitra perjalanan terpercaya Anda untuk eksplorasi tanpa batas.</p>
+    </div>
+
+    <div className="footer-section">
+      <h4>Bantuan</h4>
+      <ul>
+        <li><a href="#">Pusat Bantuan</a></li>
+        <li><a href="#">Cara Pesan</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+        <li><a href="#">Syarat & Ketentuan</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-section">
+      <h4>Produk</h4>
+      <ul>
+        <li><a href="#">Tiket Pesawat</a></li>
+        <li><a href="#">Hotel</a></li>
+        <li><a href="#">Kereta Api</a></li>
+        <li><a href="#">Aktivitas & Rekreasi</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-section">
+      <h4>Ikuti Kami</h4>
+      <div className="social-icons">
+        <a href="#">🌐 FB</a>
+        <a href="#">📸 IG</a>
+        <a href="#">🐦 X</a>
+        <a href="#">▶️ YouTube</a>
+      </div>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>© 2025  Vision Tour. All Rights Reserved.</p>
+  </div>
+</footer>
+
     </>
   )
 }
 
 
-export default home;
+export default Home;

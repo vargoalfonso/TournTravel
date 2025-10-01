@@ -8,6 +8,9 @@ const HelpSupportPage = () => {
   const handleLoginClick = () => navigate('/login');
   const handleRegisterClick = () => navigate('/Register');
   const BantuanClick = () => navigate('/HelpSupportPage');
+   const PesananClick = () => {
+    navigate('/PesananSaya'); 
+  };
 
   return (
     <>
@@ -18,7 +21,7 @@ const HelpSupportPage = () => {
           </a>
         </div>
         <ul>
-          <li><a href=""> Pesanan</a></li>
+          <li onClick={PesananClick}><a href=""> Pesanan</a></li>
           <li onClick={BantuanClick}><a href=""> Bantuan</a></li>
           <li><button onClick={handleLoginClick}>Login</button></li>
           <li><button onClick={handleRegisterClick}>Register</button></li>

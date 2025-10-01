@@ -9,7 +9,7 @@
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 10px;
-  background: #f9f9f9;
+  background: white;
   color: black;
   height: 300px; 
   width: 200px;
@@ -39,13 +39,25 @@ input[type="radio"]:checked {
 .gap{
     padding: 20px;
 }
-.contactdetail-right {
-  border: 1px solid #ddd;
+.contactdetailright0{
+  border: none;
   padding: 15px;
   border-radius: 10px;
   background: #fff;
   color: black;
   text-align: left;
+  background: #fcf5df;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.contactdetailright {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  color: black;
+  text-align: left;
+  background: #bee2ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .contactdetail-right1 {
   border: 1px solid #ddd;
@@ -160,4 +172,21 @@ text-align: left;
 .transfer-steps li {
   margin-bottom: 8px;
 
+}
+.border{
+  border:none;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgb(229, 255, 229);
+  font-weight: bold;
+  color: green;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.border1, .border2{
+  border:none;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgb(237, 237, 237);
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }

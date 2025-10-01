@@ -1,19 +1,20 @@
-.contactdetail-container {
+.contactdetailcontainer {
   display: flex;
   gap: 20px;
   padding: 20px;
+  background-color: whitesmoke;
+  height: 100vh;
 }
 
-.contactdetail-left {
+.contactdetailleft {
 
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 10px;
   background: #f9f9f9;
   color: black;
-  height: 300px; 
-  width: 200px;
- 
+  height: 600px;
+
 }
 input[type="radio"] {
   accent-color: #fff;
@@ -39,13 +40,16 @@ input[type="radio"]:checked {
 .gap{
     padding: 20px;
 }
-.contactdetail-right {
-  border: 1px solid #ddd;
+.contactdetailright {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   padding: 15px;
   border-radius: 10px;
-  background: #fff;
+  background:#bee2ff;
   color: black;
   text-align: left;
+  color: #007bff;
+
 }
 .contactdetail-right1 {
   border: 1px solid #ddd;
@@ -72,8 +76,7 @@ text-align: left;
 }
 .divider {
   border: none;
-  border-top: 2px solid #ccc;
-  margin: 10px 0 15px 0;      
+  border-top: 2px solid #ccc;     
 }
 
 .sidebar-title {
@@ -147,4 +150,13 @@ text-align: left;
 
 .submit-btn:hover {
   background: #005fcc;
+}
+.sidebarflightlist2{
+  padding: 20px;
+  border: none;
+  background-color: #d9ecff;
+  border-radius: 8px;
+
+  font-weight: bold;
+  margin-bottom: 20px;
 }

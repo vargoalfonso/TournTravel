@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./CSS/detailhotel.css";
+import headlogo from './assets/visionandtour.png';
 
 const hotelData = {
   name: "Hotel 1",
@@ -36,14 +37,33 @@ const hotelData = {
 
 function DetailHotel() {
   const navigate = useNavigate();
+  const PesananClick = () => navigate('/PesananSaya');
+  const BantuanClick = () => navigate('/HelpSupportPage');
+  const handleLoginClick = () => navigate('/login');
+  const handleRegisterClick = () => navigate('/Register');
 
   const handleSearch = () => {
   navigate('/ContactHotelDetail');
+
 };
 
 
 
   return (
+    <>
+          <div className='list-navbar'>
+            <div className='Head-logo'>
+              <a href='/' onClick={e => {e.preventDefault(); navigate('/')}}>
+                <img src={headlogo} className="logo" alt='headlogo'/>
+              </a>
+            </div>
+            <ul>
+              <li onClick={PesananClick}><a href=""> Pesanan</a></li>
+              <li onClick={BantuanClick}><a href=""> Bantuan</a></li>
+              <li><button onClick={handleLoginClick}>Login</button></li>
+              <li><button onClick={handleRegisterClick}>Register</button></li>
+            </ul>
+          </div>
     <div className="detailhotel-container">
       {/* Summary */}
       <div className="detailhotel-summary">
@@ -115,6 +135,7 @@ function DetailHotel() {
         ))}
       </div>
     </div>
+    </>
   );
 }
 
