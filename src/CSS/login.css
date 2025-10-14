@@ -60,7 +60,7 @@ h2{
 
 .login-form {
   background-color: white;
-  padding: 80px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   align-items: center;
@@ -78,10 +78,48 @@ h2{
   color: black;
 }
 
-
-
 .login-form button {
   display: block;
   margin: 0 auto;
+}
+
+.role-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  margin-left: 25px;
+
+}
+.role-tabs button {
+  padding: 8px 24px;
+  border: none;
+  background: #f1f1f1;
+  color: #333;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.role-tabs button.active {
+  background: #007bff;
+  color: #fff;
+}
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.login-form button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-form button[type="submit"]:hover {
+  background: #005fcc;
 }
 

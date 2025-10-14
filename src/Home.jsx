@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
 import planelogo from './assets/plane.png'
 import hotellogo from './assets/hotel.png'
 import headlogo from './assets/visionandtour.png'
@@ -40,6 +40,14 @@ const cards = [
 
 function Home() {
   const navigate = useNavigate(); 
+  // Cek status login dari localStorage
+  const [loginRole, setLoginRole] = useState(null);
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  useEffect(() => {
+    const role = localStorage.getItem('loginRole');
+    setLoginRole(role);
+  }, []);
 
   const handleLoginClick = () => {
     navigate('/login'); 
@@ -77,38 +85,66 @@ function Home() {
         <ul>
           <li onClick={PesananClick}><a href=""> Pesanan</a></li>
           <li onClick={BantuanClick}><a href=""> Bantuan</a></li>
-           <button onClick={handleLoginClick}>Login</button>
-          <button onClick={handleRegisterClick}>Register</button>
-          
+          {loginRole && (
+            <li>
+              <div className="user-card" style={{position: 'relative'}}>
+                <span
+                  style={{cursor: 'pointer'}}
+                  onClick={() => setShowDropdown((prev) => !prev)}
+                >
+                  Hi, {loginRole === 'user' ? 'User' : 'Company'}
+                </span>
+                {showDropdown && (
+                  <div className="user-dropdown">
+                    <p className="logout-btn" onClick={() => {
+                      localStorage.removeItem('loginRole');
+                      setLoginRole(null);
+                      window.location.reload();
+                    }}>Logout</p>
+                  </div>
+                )}
+              </div>
+            </li>
+          )}
+          { !loginRole && <>
+            <button onClick={handleLoginClick}>Login</button>
+            <button onClick={handleRegisterClick}>Register</button>
+          </> }
         </ul>
       </div>
 
-      <div className="hero-section">
-  <h1>
-    Jelajahi Dunia Bersama <span className="highlight">Vision Tour</span>
-  </h1>
-  <p>
-    Temukan destinasi impian Anda dengan layanan terpercaya dan pengalaman tak terlupakan
-  </p>
+      <div className="hero-section" style={{
+        background: loginRole === 'user'
+          ? 'linear-gradient(135deg, #dbeafe, #bae6fd, #ccfbf1)'
+          : loginRole === 'company'
+            ? 'linear-gradient(135deg, #f3e8ff, #e9d5ff, #c7d2fe)'
+            : 'linear-gradient(135deg, #dbeafe, #bae6fd, #ccfbf1)'
+      }}>
+        <h1>
+          Jelajahi Dunia Bersama <span className="highlight">Vision Tour</span>
+        </h1>
+        <p>
+          Temukan destinasi impian Anda dengan layanan terpercaya dan pengalaman tak terlupakan
+        </p>
 
-  {/* Search Bar */}
-  <div className="search-wrapper">
-    <input
-      type="text"
-      placeholder="Mau ke mana? Coba cari destinasi impianmu..."
-    />
-    <button className="search-btn">Cari</button>
-  </div>
+        {/* Search Bar */}
+        <div className="search-wrapper">
+          <input
+            type="text"
+            placeholder="Mau ke mana? Coba cari destinasi impianmu..."
+          />
+          <button className="search-btn">Cari</button>
+        </div>
 
-  {/* Popular destinations */}
-  <div className="popular-destinations">
-    <span>Bali</span>
-    <span>Jakarta</span>
-    <span>Yogyakarta</span>
-    <span>Lombok</span>
-    <span>Bandung</span>
-  </div>
-</div>
+        {/* Popular destinations */}
+        <div className="popular-destinations">
+          <span>Bali</span>
+          <span>Jakarta</span>
+          <span>Yogyakarta</span>
+          <span>Lombok</span>
+          <span>Bandung</span>
+        </div>
+      </div>
 
       <div className='List'>
         <a href="#" onClick={e => { e.preventDefault(); handleHotelClick(); }}>
